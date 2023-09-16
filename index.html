@@ -1,31 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="absolute bottom-0 left-0 -z-10">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/bg-desktop.png" />
+        <img src="images/bg-mobile.png" alt="" class="w-full" />
+      </picture>
+    </div>
+    <div
+      class="container-fluid max-w-6xl mx-auto px-8 flex flex-col justify-center h-screen gap-8 lg:flex-row lg:items-center"
+    >
+      <article
+        class="tools rounded-lg dark-blue p-8 rounded-right lg:w-full lg:w-1/2"
+      >
+        <img src="images/logo.svg" alt="flyo" />
+        <ul class="imgs mt-10 flex items-start justify-content-start gap-5">
+          <li class="bg-image p-3 rounded-lg">
+            <img
+              class="h-6 w-6"
+              src="images/icon-document.svg"
+              alt="document"
+            />
+          </li>
+          <li class="bg-image p-3 rounded-lg">
+            <img class="h-6 w-6" src="images/icon-folder.svg" alt="folder" />
+          </li>
+          <li class="bg-image p-3 rounded-lg">
+            <img class="h-6 w-6" src="images/icon-upload.svg" altuploadnt">
+          </li>
+        </ul>
+      </article>
+      <article class="info rounded-lg dark-blue p-8 lg:w-full relative">
+        <p class="note text-base opacity-75">
+          You’ve used <span class="opacity-100 text-lg">815</span> GB of your
+          storage
+        </p>
+        <!-- <input type="range" name="" class="range" value="85" /> -->
+        <div class="bg-image h-5 w-full rounded-full my-4 relative">
+          <article
+            class="linear-gradient w-3/4 h-3 absolute top-1 left-1 rounded full"
+          >
+            <div class="bg-white rounded-full absolute right-1 ball"></div>
+          </article>
+        </div>
+        <ul class="remaining flex justify-between">
+          <li class="font-bold text-white start">0 GB</li>
+          <li class="font-bold text-white end">1000 GB</li>
+        </ul>
+        <div
+          class="bg-white rounded-lg w-40 h-16 flex items-center justify-content bg-185"
+        >
+          <h2 class="text-slate-900 font-bold text-4xl p-3">
+            185 <span class="font-normal opacite-75 text-base"> GB Left </span>
+          </h2>
+          <div class="triangle"></div>
+        </div>
+      </article>
+    </div>
 
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
